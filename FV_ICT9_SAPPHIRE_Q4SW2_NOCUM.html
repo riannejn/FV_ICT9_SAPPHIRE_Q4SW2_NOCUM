@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>Seatwork 2</title>
+
+	<style type="text/css">
+		body {
+		background-color:#f8bbc2;
+		text-align: center;
+		}
+		th{
+			padding: 50px;
+		}
+		.middle{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<h1 class="text-white">тιмє ¢σηνєятєя</h1>
+	<h3 class="text-white">ᴛᴏ ᴍɪɴɪᴍɪᴢᴇ ʏᴏᴜʀ ᴛɪᴍᴇ !</h3>
+	<br>
+	<table class="middle">
+		<tr>
+			<th style="background-color: #fdf7e5">
+				<h5>SECONDS</h5>
+				<p><input type="number" name="" id="sec"></p>
+				<button class="btn btn-warning" onclick="STM()">To Minutes</button>
+				<button class="btn btn-warning" onclick="STH()">To Hours</button>
+				<button class="btn btn-warning" onclick="STD()">To Days</button>
+			</th>
+			<th style="background-color: #fdf7e5">
+				<h5>MINUTES</h5>
+				<p><input type="number" name="" id="min"></p>
+				<button class="btn btn-warning" onclick="MTS()">To Seconds</button>
+				<button class="btn btn-warning" onclick="MTH()">To Hours</button>
+				<button class="btn btn-warning" onclick="MTD()">To Days</button>
+			</th>
+		</tr>
+		<tr>
+			<th style="background-color: #fdf7e5">
+				<h5>HOURS</h5>
+				<p><input type="number" name="" id="hrs"></p>
+				<button class="btn btn-warning" onclick="HTS()">To Seconds</button>
+				<button class="btn btn-warning" onclick="HTM()">To Minutes</button>
+				<button class="btn btn-warning" onclick="HTD()">To Days</button>
+			</th>
+
+			<th style="background-color: #fdf7e5">
+				<h5>DAYS</h5>
+				<p><input type="number" name="" id="day"></p>
+				<button class="btn btn-warning" onclick="DTS()">To Seconds</button>
+				<button class="btn btn-warning" onclick="DTM()">To Minutes</button>
+				<button class="btn btn-warning" onclick="DTH()">To Hours</button>
+			</th>
+			
+		</tr>
+	</table>
+</body>
+	<script type="text/javascript">
+		SECONDS
+			function STM(){
+			var x, y
+			x = (document.getElementById('sec').value);
+			y = 60;		
+			alert(x / y);
+			}
+
+			function STH(){
+			var x, y
+			x = (document.getElementById('sec').value);
+			y = 3600;		
+			alert(x / y);
+			}
+
+			function STD(){
+			var x, y
+			x = (document.getElementById('sec').value);
+			y = 86400;		
+			alert(x / y);
+			}
+		MINUTES
+			function MTS(){
+			var x, y
+			x = (document.getElementById('min').value);
+			y = 60;		
+			alert(x * y);
+			}
+
+			function MTH(){
+			var x, y
+			x = (document.getElementById('min').value);
+			y = 60;		
+			alert(x / y);
+			}
+
+			function MTD(){
+			var x, y
+			x = (document.getElementById('min').value);
+			y = 1440;		
+			alert(x / y);
+			}
+		HOURS
+			function HTS(){
+			var x, y
+			x = (document.getElementById('hrs').value);
+			y = 3600;		
+			alert(x * y);
+			}
+
+			function HTM(){
+			var x, y
+			x = (document.getElementById('hrs').value);
+			y = 60;		
+			alert(x * y);
+			}
+
+			function HTD(){
+			var x, y
+			x = (document.getElementById('hrs').value);
+			y = 24;		
+			alert(x / y);
+			}
+		DAYS
+			function DTS(){
+			var x, y
+			x = (document.getElementById('day').value);
+			y = 86400;		
+			alert(x * y);
+			}
+
+			function DTM(){
+			var x, y
+			x = (document.getElementById('day').value);
+			y = 1440;		
+			alert(x * y);
+			}
+
+			function DTH(){
+			var x, y
+			x = (document.getElementById('day').value);
+			y = 24;		
+			alert(x * y);
+			}
+	</script>
+</html>
